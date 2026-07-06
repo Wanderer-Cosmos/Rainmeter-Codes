@@ -1,63 +1,134 @@
 # Rainmeter Skins
 
-A collection of useful and customizable **Rainmeter skins** for Windows. This repository contains personal projects, utilities, widgets, and desktop enhancements designed to be lightweight, practical, and easy to customize.
+A collection of lightweight, customizable **Rainmeter skins** for Windows. This repository is intended to host useful desktop widgets and utilities that are easy to modify and reuse.
 
-More skins and widgets will be added over time.
+More skins will be added over time.
 
 ---
 
-## Current Skins
+# Included Skin
 
-### 📅 M.Sc. Physics Timetable
+## Interactive Timetable
 
-An interactive timetable widget built for Rainmeter.
+A simple and customizable timetable widget for Rainmeter.
 
-**Features**
+### Features
 
 * 6-day × 6-period timetable layout
 * Clean, minimal interface
-* Native Rainmeter tooltips showing:
-
-  * Course name
-  * Faculty
-  * Credits
-* Easy to customize by editing the `.ini` file
-* Lightweight with no external plugins required
-
-This skin was originally created for a Semester II M.Sc. Physics timetable but can be adapted for any timetable by changing the cell contents and tooltips.
+* Native Rainmeter tooltips
+* Lightweight (no external plugins required)
+* Easy to customize for schools, colleges, universities, or work schedules
 
 ---
 
-## Requirements
+# Customization
 
-* Windows
-* Rainmeter (latest version)
+The skin has been uploaded with **generic placeholder values** for privacy.
+
+### 1. Change the title
+
+Edit the **`[Title]`** meter:
+
+```ini
+Text=Course - Semester X
+```
+
+Example:
+
+```ini
+Text=B.Sc. Physics - Semester IV
+```
 
 ---
 
-## Installation
+### 2. Change the timetable
 
-1. Download or clone this repository.
-2. Copy the desired skin folder into:
+Each timetable cell has a section similar to:
 
-   ```
-   Documents\Rainmeter\Skins\
-   ```
+```ini
+[Cell22]
+Text=ABCD
+```
+
+Replace `ABCD` with your course code or subject name.
+
+Example:
+
+```ini
+Text=CS201
+```
+
+---
+
+### 3. Edit tooltips
+
+Every subject cell supports Rainmeter tooltips.
+
+A sample tooltip is provided in **`ToolTip.txt`**.
+
+Example:
+
+```ini
+ToolTipTitle=ABCD
+ToolTipText=Faculty : Dr. ABCD#CRLF#Credits : 4
+```
+
+Copy this block into any subject cell and replace the placeholder values with your own information.
+
+Rainmeter uses `#CRLF#` to create new lines inside the tooltip.
+
+---
+
+### 4. Change class timings
+
+The time labels are defined in these sections:
+
+```ini
+[Time1]
+[Time2]
+...
+[Time6]
+```
+
+Modify the `Text=` value to match your timetable.
+
+---
+
+### 5. Empty periods
+
+Leave a cell empty by setting:
+
+```ini
+Text=
+```
+
+---
+
+# Installation
+
+1. Install Rainmeter.
+2. Copy the skin folder into:
+
+```
+Documents\Rainmeter\Skins\
+```
+
 3. Refresh Rainmeter.
 4. Load the skin from the Rainmeter Manager.
 
 ---
 
-## Roadmap
+# Repository Roadmap
 
-Planned additions include:
+This repository will continue to grow with additional Rainmeter projects, including:
 
-* More timetable templates
-* System monitoring widgets
-* Productivity widgets
-* Utility tools
-* Experimental Rainmeter projects
+* Timetable widgets
+* Productivity tools
+* Desktop utilities
+* System monitoring skins
+* Experimental widgets
 
 ---
 
-Contributions, suggestions, and improvements are always welcome.
+Feel free to modify, improve, and adapt these skins to suit your own workflow.
