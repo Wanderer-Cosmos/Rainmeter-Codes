@@ -1,0 +1,2 @@
+ToolTipTitle=ABCD
+ToolTipText=Faculty : Dr. ABCD#CRLF#Credits : 4
